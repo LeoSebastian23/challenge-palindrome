@@ -19,12 +19,11 @@ const Input: React.FC<InputProps> = ({ onSubmit }) => {
 
   // Maneja los cambios en el input, permitiendo solo letras, números y espacios
   const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-    const value = e.target.value;
+    const value = event.target.value; // Cambié 'e' por 'event'
     // Filtra caracteres no alfanuméricos, pero permite acentos y caracteres con tilde
     const sanitizedValue = value.replace(/[^a-zA-Z0-9áéíóúÁÉÍÓÚ\s]/g, ''); 
-  
+
     setInput(sanitizedValue);
-  
     
     // Si se eliminaron caracteres no válidos, muestra un error
     if (value !== sanitizedValue) {
