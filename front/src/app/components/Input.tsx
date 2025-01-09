@@ -47,7 +47,7 @@ const Input: React.FC<InputProps> = ({ onSubmit }) => {
 
     try {
       // Envia la solicitud al servidor
-      const response = await fetch('http://localhost:8000/api/palindrome', {
+      const response = await fetch('https://challenge-palindrome.onrender.com/api/palindrome', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ text: input }),
