@@ -18,7 +18,7 @@ const Input: React.FC<InputProps> = ({ onSubmit }) => {
   const [error, setError] = useState<string | null>(null); // Almacena mensajes de error
 
   // Maneja los cambios en el input, permitiendo solo letras, números y espacios
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+  const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     const value = e.target.value;
     // Filtra caracteres no alfanuméricos, pero permite acentos y caracteres con tilde
     const sanitizedValue = value.replace(/[^a-zA-Z0-9áéíóúÁÉÍÓÚ\s]/g, ''); 
