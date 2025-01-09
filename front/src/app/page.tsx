@@ -28,7 +28,7 @@ const Home = () => {
   // Cargar historial desde el backend
   const fetchHistory = async () => {
     try {
-      const res = await fetch("http://localhost:8000/api/history");
+      const res = await fetch("https://challenge-palindrome.onrender.com/api/history");
       if (res.ok) setHistory(await res.json());
       else console.error("Error al obtener el historial");
     } catch (err) {
@@ -48,7 +48,7 @@ const Home = () => {
   };
 
   const handleDeleteAll = () => {
-    fetch("http://localhost:8000/api/history", {
+    fetch("https://challenge-palindrome.onrender.com/api/history", {
       method: "DELETE",
     })
       .then((res) => {
@@ -64,7 +64,7 @@ const Home = () => {
 
     const handleDeleteItem = async (text: string) => {
       try {
-        const res = await fetch(`http://localhost:8000/api/history/${text}`, {
+        const res = await fetch(`https://challenge-palindrome.onrender.com/api/history/${text}`, {
           method: "DELETE",
         });
         if (res.ok) {
