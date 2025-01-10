@@ -1,19 +1,8 @@
 {
-    "builds": [
-      {
-        "src": "package.json",
-        "use": "@vercel/next"
-      }
-    ],
-    "build": {
-      "env": {
-        "NODE_ENV": "production"
-      },
-      "commands": {
-        "install": "npm install",
-        "build": "npm run build"
-      },
-      "output": ".next"
+  "builds": [
+    {
+      "src": "package.json",
+      "use": "@vercel/next"
     }
-  }
-  
+  ]
+}
