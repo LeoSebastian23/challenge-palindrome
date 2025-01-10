@@ -9,7 +9,7 @@ export const app = express();
 app.use(json());
 app.use(
   cors({
-    origin: "https://challenge-palindrome01.netlify.app", // URL de tu frontend en Netlify
+    origin: "https://challenge-palindrome.vercel.app/", // URL de tu frontend en Netlify
     methods: ["GET", "POST", "DELETE"], // Métodos permitidos
     allowedHeaders: ["Content-Type"], // Headers permitidos
   })
