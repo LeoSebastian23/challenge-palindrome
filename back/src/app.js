@@ -6,8 +6,14 @@ import { errorHandler } from './middlewares/errorMiddleware.js';
 
 export const app = express();
 
-app.use(cors());
 app.use(json());
+app.use(
+  cors({
+    origin: "https://challenge-palindrome01.netlify.app", // URL de tu frontend en Netlify
+    methods: ["GET", "POST", "DELETE"], // Métodos permitidos
+    allowedHeaders: ["Content-Type"], // Headers permitidos
+  })
+);
 
 // Ruta de prueba para verificar que el servidor esté funcionando.
 app.get('/ping', (req, res) => {
