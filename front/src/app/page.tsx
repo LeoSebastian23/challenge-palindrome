@@ -7,8 +7,8 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import Input from "@/app/components/Input";
-import HistoryList from "@/app/components/HistoryList";
+import Input from "@/components/Input";
+import HistoryList from "@/components/HistoryList";
 
 type Result = {
   text: string;
