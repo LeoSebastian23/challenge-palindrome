@@ -17,10 +17,10 @@ export default function RootLayout({
 }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en">
-      <body className="bg-gray-50 text-gray-900">
-        <header className="bg-blue-500 p-4 shadow-md">
+      <body className="bg-slate-900 text-slate-50">
+        <header className="bg-blue-800 p-4 shadow-md">
           <h1 className="text-2xl text-white font-bold text-center">
-          Challenge Palindrome Checker
+          CHALLENGE PALINDROME CHECKER
           </h1>
         </header>
 
@@ -28,7 +28,7 @@ export default function RootLayout({
           <div className="max-w-3xl mx-auto w-full">{children}</div>
         </main>
 
-        <footer className="bg-blue-500 p-4 mt-auto">
+        <footer className="bg-blue-950 p-4 mt-auto">
           <p className="text-white text-center">
             Desarrollado por Leonardo Sebastian
           </p>

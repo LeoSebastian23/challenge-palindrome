@@ -77,7 +77,7 @@ const Input: React.FC<InputProps> = ({ onSubmit }) => {
           value={input}
           onChange={handleChange}
           placeholder="Ingresa una palabra o frase"
-          className="w-full sm:w-72 p-3 border-2 border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+          className="w-full sm:w-72 p-3 border-2 text-gray-900 border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
         />
         <button
           type="submit"
