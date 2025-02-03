@@ -27,7 +27,7 @@ const HistoryList: React.FC<HistoryListProps> = ({ history, onDelete }) => {
   }, [history]);
 
   return (
-    <div className="mt-6">
+    <div className="mt-6 ">
       <h3 className="text-xl font-semibold mb-4">Historial</h3>
 
       {/* Mostrar mensaje si está cargando o no hay historial */}
@@ -41,7 +41,7 @@ const HistoryList: React.FC<HistoryListProps> = ({ history, onDelete }) => {
           {history.map((item, index) => (
             <li
               key={index}
-              className={`bg-white p-4 rounded-lg shadow-md border-l-4 break-words ${
+              className={`bg-slate-900 p-4 rounded-lg shadow-md border-l-4 break-words ${
                 item.isPalindrome ? 'border-green-500' : 'border-red-500'
               }`}
             >
